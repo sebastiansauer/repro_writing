@@ -18,6 +18,7 @@ Requirements to reproducible writing in academia
 10. human readable files
 11. free of charge?
 12. Focus on content, not style, or technology (hey, I want to write a paper, not doing art or developing some technology!)
+13. statistical results are automatically pasted into the manuscript
 
 
 
