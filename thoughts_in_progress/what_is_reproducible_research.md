@@ -14,5 +14,9 @@ What is "reproducible" research?
 8. There should be nore "technical" barriers to reproduce study (e.g., analyses was performed with strange software, nobody is able to read/open its files)
 
 
+**In short, repro. science amounts to providing a "cookbook" to your study. Anyone (with decent experience in your field) should come to the same results (or conclusions) as you, when going through each step of the study.**
+
+ 
+
 [Good source by Roger D. Peng](http://simplystatistics.org/2014/06/06/the-real-reason-reproducible-research-is-important/)
 
