@@ -1,0 +1,1 @@
+pandoc -o repro_writing_abstract.pdf Repro_Writing_Abstract_Talk_DGPs.md --filter pandoc-citeproc --standalone --bibliography=talk_repro_writing.bib --csl apa.csl
