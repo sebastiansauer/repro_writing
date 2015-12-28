@@ -14,8 +14,8 @@ others' findings are almost impossible to publish in top scientific journals
 is well-suited for writing reproducible academic papers. This method 
 is a combination of Latex, R, Knitr, Git, and Pandoc. These software 
 tools are robust, well established and not more than reasonable complex. 
-Two other approaches, one based on Word Processors (MS Word), and one 
-based on Markdown, are discussed and ultimately disencouraged. 
+ Other approaches, such as using word Processors (MS Word), Markdown, 
+ or online collaborative writing tools (Authorea) are discussed. 
 The presentation is based on a practical software demonstration. 
 A Github repository is provided for easy reproducibility.
 
