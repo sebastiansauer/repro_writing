@@ -2,13 +2,13 @@ Reproducible Paper Writing
 =====
 
 Scientific publications should both announce a result and convince 
-readers that the result is correct [REF1]. 
+readers that the result is correct (Mesirov, 2010). 
 However, in psychology, studies that replicate (or fail to replicate) 
 others' findings are almost impossible to publish in top scientific journals 
-[REF2] thus contributing to the so-called "reproducibility crisis" in psychological sciences 
-[REF3]. This is not only due to the fact that researchers value new results 
+(Crocker & Cooper, 2011) thus contributing to the so-called "reproducibility crisis" in psychological sciences 
+(Open Science Collaboration, 2015). This is not only due to the fact that researchers value new results 
  higher than reproducing existing ones, but also by a lack of 
- technical and statistical skills [REF4]. Thus better technical skills 
+ technical and statistical skills (Peng, 2015). Thus better technical skills 
  for reproducible paper writing and data analyses may provide a remedy 
  to the reproducibility crisis. In this talk, we present a method that 
 is well-suited for writing reproducible academic papers. This method 
@@ -23,13 +23,19 @@ A Github repository is provided for easy reproducibility.
 
 REFERENCES
 
-[REF1](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3878063/)
+Mesirov, J. P. (2010). COMPUTER SCIENCE. Accessible Reproducible Research. 
+Science, 327(5964), 10.1126/science.1179653. doi:10.1126/science.1179653
 
-[REF2](http://www.sciencemag.org/content/334/6060/1182.full)
 
-[REF3](http://www.sciencemag.org/content/349/6251/aac4716.full?keytype=ref&siteid=sci&ijkey=1xgFoCnpLswpk)
+Crocker, J., & Cooper, M. L. (2011). Addressing Scientific Fraud. 
+Science , 334 (6060 ), 1182. doi:10.1126/science.1216775 
 
-[REF4](http://onlinelibrary.wiley.com/doi/10.1111/j.1740-9713)
 
+Open Science Collaboration. (2015). Estimating the reproducibility of 
+psychological science. Science, 349(6251). doi:10.1126/science.aac4716
+
+
+Peng, R. (2015). The reproducibility crisis in science: A statistical 
+counterattack. Significance, 12(3), 30–32. doi:10.1111/j.1740-9713.2015.00827.x
 
 
