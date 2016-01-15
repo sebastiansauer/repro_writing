@@ -4,7 +4,7 @@ Reproducible Paper Writing
 Scientific publications should both announce a result and convince 
 readers that the result is correct [@Mesirov2010]. Reproducibility 
 refers to methods which help the reader to convince themselves by own means
-that a given result is correct, or plausible	 at least. Thus, reproducibility,
+that a given result is correct, or plausible at least. Thus, reproducibility,
 as opposed to replicability, is particularly important because successfully 
 replicating a study is not neccessarily possible even if the study 
 was well conducted [@Peng2015]. In any case, a reanalysis of the 
