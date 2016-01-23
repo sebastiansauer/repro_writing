@@ -1,0 +1,25 @@
+---
+title: 'Der p-Wert'
+author: "Sebastian Sauer"
+date: "1 Februar 2016"
+output:
+  ioslides_presentation:
+    css: https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css
+    logo: https://raw.githubusercontent.com/christophergandrud/Hertie_Collab_Data_Science/master/img/HertieCollaborativeDataLogo_v1.png
+  beamer_presentation: default
+  slidy_presentation: default
+---
+
+
+
+
+## der p-Wert -- heilige Kuh der Forschung
+
+- **Allgegenwärtig** in der Forschung (zumindest Psychologie)
+
+- **Torhüter** zur Publikation
+
+- **Maßzahl** für das Vertrauen in eine Hypothese
+
+- Stark **kritisiert**: "Worst thing ever happened to psychology"
+
