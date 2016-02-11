@@ -1,15 +1,82 @@
 ---
-title: 'Der p-Wert'
+title: "Der p-Wert"
 author: "Sebastian Sauer"
 date: "1 Februar 2016"
 output:
-  ioslides_presentation:
-    css: https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css
-    logo: https://raw.githubusercontent.com/christophergandrud/Hertie_Collab_Data_Science/master/img/HertieCollaborativeDataLogo_v1.png
+  ioslides_presentation: 
+    logo: FOM_Logo.jpg
+    fig_width: 6
+    fig_height: 6
+    keep_md: true
   beamer_presentation: default
   slidy_presentation: default
 ---
 
+
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(fig.width = 4, fig.height = 4, echo=FALSE, warning=FALSE, message=FALSE)
+```
+
+
+```{r init_analysis, echo = FALSE, message = FALSE}
+
+library(ggplot2)
+library(tidyr)
+library(plotly)
+
+n <- 50  # sample size
+perc_dec <- .80  # percentage of observations with *decreasing* value
+
+
+# make up some data, (standard) normal distributed
+set.seed(42)  # for repro
+X <- rnorm(n = n, mean = 0, sd = 1)
+
+# most observations are *decreasing* in their value, but some are increasing
+X_dec <- rnorm(n = n * perc_dec, mean = -0.5, sd = 1)
+X_inc <- rnorm(n = n - (n * perc_dec), mean = +5, sd = 1)
+
+group1 <- X
+group2 <- c(X_dec, X_inc)
+```
+
+
+
+
+## Kritik 3 - Aggregatsbezogen: Theorien sind individuumsbezogen
+
+```{r t_test}
+t <- t.test(group1, group2, paired = F)
+```
+
+
+```{r plot1}
+df <- data.frame(id = 1:n,
+                 type = c(rep("decreasing", n * perc_dec),
+                          rep("increasing", (n - (n * perc_dec)))),
+                 group1 = group1, group2 = group2)
+
+df_long <- gather(df, group, value, 3:4)
+
+p0 <- ggplot(data = df_long, aes(x = group, y = value)) +
+  ylim(c(min(df_long$value), max(df_long$value)))
+p_mean_cl <- stat_summary(fun.data = "mean_cl_boot", geom = "errorbar")
+p_mean <- stat_summary(fun.y = mean, geom = "point", color = "red")
+p1 <- p0 + p_mean + p_mean_cl
+
+p1_plotly <- ggplotly(p1)
+p1_plotly
+```
+
+
+
+
+## TEST
+
+<div style="text-align:center">
+<img src ="Gigerenzer_Krauss_2004.png" height=416 width=400/>
+</div>.
 
 
 
@@ -22,4 +89,55 @@ output:
 - **Maßzahl** für das Vertrauen in eine Hypothese
 
 - Stark **kritisiert**: "Worst thing ever happened to psychology"
+
+
+## Einige Kritikpunkt am p-Wert
+
+1. missverständlich
+
+2. unrealistische Voraussetzungen
+
+3. aggregatsbezogen
+
+
+
+## Kritik 1 - Missverständlich: Der p-Wert sagt nicht das, was man denkt
+
+<div style="text-align:center"><img src ="eq1.png" />
+</div>
+
+
+## Dr. Wombledorf experimentiert
+
+- t-test für unabhängige Stichproben ergibt *t=2.7, df=18, p=.01*. 
+- Also:
+
+1. Die Null-Hypothese ist komplett widerlegt
+2. Wir kennen jetzt die Wahrscheinlichkeit, mit der die H0 wahr ist
+3. Wir haben unsere H1 mit Sicherheit bewiesen 
+4. Wir können die Wahrscheinlichkeit der H1 ableiten
+5. Wenn wir die H0 verwerfen, wissen wir die Wahrscheinlichkeit mit der wir einen Fehler begehen
+6. Der p-Wert von 0.01 zeigt, dass, wenn wir das Experiment sehr oft wiederholen, würden wir in 99% der Fälle ein signifikantes Ergebnis bekommen
+
+
+## Viele verstehen den p-Wert falsch
+
+<div style="text-align:center">
+<img src ="Gigerenzer_Krauss_2004.png" height=416 width=400/>
+</div>.
+
+
+## Kritik 2 - Unrealistische Voraussetzungen: Hat ein Fragebogen-Score metrisches Niveau?
+
+![](/Users/sebastiansauer/Documents/git/repro_writing/talk_Essen_Dozententage_2016/quant1.png)
+
+
+## Summenscore hat nicht unbedingt metrisches Niveau
+
+![](/Users/sebastiansauer/Documents/git/repro_writing/talk_Essen_Dozententage_2016/quant2.png)
+
+
+## Summenscore hat nicht unbedingt ordinales Niveau
+
+![](/Users/sebastiansauer/Documents/git/repro_writing/talk_Essen_Dozententage_2016/quant3.png)
 

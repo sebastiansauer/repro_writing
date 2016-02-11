@@ -1,0 +1,30 @@
+\begin{thebibliography}{1}
+
+\bibitem{Clapp2011}
+Wesley~C Clapp, Michael~T Rubens, Jasdeep Sabharwal, and Adam Gazzaley.
+\newblock {Deficit in switching between functional brain networks underlies the
+  impact of multitasking on working memory in older adults}.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  108(17):7212--7217, apr 2011.
+
+\bibitem{OpenScienceCollaboration2015}
+{Open Science Collaboration}.
+\newblock {Estimating the reproducibility of psychological science}.
+\newblock {\em Science}, 349(6251), aug 2015.
+
+\bibitem{Peng2015}
+Roger Peng.
+\newblock {The reproducibility crisis in science: A statistical counterattack}.
+\newblock {\em Significance}, 12(3):30--32, jun 2015.
+
+\bibitem{RCoreTeam2015}
+{R Core Team}.
+\newblock {\em {R: A Language and Environment for Statistical Computing}}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria, 2015.
+
+\bibitem{Xie2016}
+Yihui Xie.
+\newblock {\em {knitr: A General-Purpose Package for Dynamic Report Generation
+  in R}}, 2016.
+
+\end{thebibliography}
