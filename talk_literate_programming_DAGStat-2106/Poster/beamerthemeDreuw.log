@@ -1,0 +1,34 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.24)  11 FEB 2016 15:34
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**beamerthemeDreuw.sty
+(./beamerthemeDreuw.sty
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9n> and hyphenation patterns for 79 languages loaded.
+
+LaTeX Warning: You have requested package `',
+               but the package provides `beamerthemeDreuw'.
+
+Package: beamerthemeDreuw 
+(./tangocolors.sty
+./tangocolors.sty:9: Undefined control sequence.
+l.9 \definecolor
+                {tabutter}{rgb}{0.98824, 0.91373, 0.30980}		% #fce94f
+? 
+./tangocolors.sty:9: Emergency stop.
+l.9 \definecolor
+                {tabutter}{rgb}{0.98824, 0.91373, 0.30980}		% #fce94f
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 14 strings out of 493054
+ 289 string characters out of 6134760
+ 53374 words of memory out of 5000000
+ 3633 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 9i,0n,7p,123b,10s stack positions out of 5000i,500n,10000p,200000b,80000s
+./tangocolors.sty:9:  ==> Fatal error occurred, no output PDF file produced!
